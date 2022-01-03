@@ -12,6 +12,10 @@
 
 `pip install -r requirements.txt`
 
+如果运行之后仍然有库冲突，可能是`requirements.txt`包含的库和依赖不全，可以运行
+
+`pip install -r myrequirements.txt ` 这样是完整版的库和依赖，但也有很多自己原来的库的冗余
+
 
 
 #### 1.训练
@@ -71,3 +75,16 @@ python task2_train.py
 `test.py`单独用于task的联合测试，运行：
 
 `python test.py`
+
+
+
+#### 3.可视化
+
+**训练过程可视化：**
+
+
+
+**训练结果可视化：**
+
+为了简单起见，采用了自己写的简单的PCA降维程序进行可视化，第一二问分别可以进行可视化，运行`visualization.ipynb`文件即可
+

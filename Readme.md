@@ -87,3 +87,8 @@ python task2_train.py
 **训练过程可视化：**
 
 这里本来想把整个训练过程也可视化的，但是似乎比较麻烦，而且步骤与结果可视化基本一致，但计算量很大，限于考试周时间，之后再完善吧。
+
+#### 4.数据集
+Github里面只包括了主要的代码，但是没有相应的数据，数据具体见云盘，包括根目录下的test_offline和./train文件夹下的train。
+云盘链接如下：
+https://cloud.tsinghua.edu.cn/f/9f1eb04bbcbf438db032/?dl=1

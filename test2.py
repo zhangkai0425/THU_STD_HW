@@ -28,9 +28,9 @@ def test_task2(wav_path):
 
         ## 做一些处理
         #print('audio_trace have shape of:',audio_trace.shape,'and sampling rate of: 44100')
-        print(wav_path+'/'+file_name)
+        # print(wav_path+'/'+file_name)
         id=utils.predict2(wav_path+'/'+file_name)
-        print('result is:',id)
+        # print('result is:',id)
 
         ## 返回一个ID
         result_dict[file_name]=utils.ID_dict[id]

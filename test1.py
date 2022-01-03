@@ -10,7 +10,6 @@ def test_task1(video_path):
     for file_name in os.listdir(video_path):
         ## 读取MP4文件中的视频,可以用任意其他的读写库
         # video_frames,video_fps = utils.read_video(os.path.join(video_path,file_name))
-        print(file_name)
         ## 做一些处理
         path = os.path.join(video_path,file_name)
         # print('video_frames have shape of:',video_frames.shape, 'and fps of:',video_fps)

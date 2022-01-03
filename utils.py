@@ -1,4 +1,4 @@
-import os,ffmpeg
+import os,ffmpeg,sys
 
 from numpy.lib.utils import deprecate
 import numpy as np
@@ -208,7 +208,7 @@ def predict1(testpath):
                 results = np.linalg.norm([facefeature[i, :]] - unknown_face, axis=1)
                 vector[i] += results
     ID = np.argmin(vector) + 1
-    print("测试结果:",ID_dict[ID])
+    # print("测试结果:",ID_dict[ID])
     return ID
 
 ### task2 函数
@@ -365,7 +365,7 @@ def predict2_new(path1,path2,path3,ID1,ID2,ID3):
 
 def predict3_new(testpath):
     ID1,ID2,ID3 = get3face(testpath)
-    print("ID = ",ID1,ID2,ID3)
+    # print("ID = ",ID1,ID2,ID3)
     ID=[ID1,ID2,ID3]
     mixedpath = "mixed.wav"
     audio_trace = read_audio(testpath,sr=44100)
@@ -374,7 +374,7 @@ def predict3_new(testpath):
     generate(mixedpath)
     id1 ,id2, id3= predict2_new("1.wav",'2.wav','3.wav',ID1,ID2,ID3)
     
-    print("id=",id1,id2,id3)
+    # print("id=",id1,id2,id3)
     wav1,fs= sf.read("1.wav")
     wav2,fs= sf.read("2.wav")
     wav3,fs= sf.read("3.wav")
